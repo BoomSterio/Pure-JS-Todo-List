@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(-121deg, #ffd077 0%, #fab4ff 100%);
+  font-family: 'Staatliches', cursive;
+  height: 100vh; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul {
+  margin-top: 8px;
+  max-width: 520px;
+  min-width: 280px;
+  max-height: 75vh;
+  overflow-y: scroll;
+  padding: 4px 8px;
+  transition: all 1s ease; }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; }
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  border-radius: 3px;
+  background-color: lightblue;
+  margin-top: 10px;
+  width: 100%;
+  height: 45px;
+  list-style: none;
+  user-select: none;
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: all .2s ease-out, transform .2s ease; }
+
+li .hover:hover {
+  transform: scale(1.025); }
+
+li input {
+  margin-right: 10px; }
+
+li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid darkgray;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  margin-left: auto;
+  transition: .15s ease; }
+
+li button:hover {
+  color: blue;
+  box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.2) inset; }
+
+li label {
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.completed {
+  background-color: lightgreen;
+  text-decoration: line-through;
+  opacity: 0.6; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0; }
+
+.creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  width: 320px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2); }
+
+.fadeOut {
+  opacity: 0;
+  transform: translateY(-30px) scale(0.8); }
+
+@media (max-width: 480px) {
+  .creator {
+    width: 100%; }
+  ul {
+    width: 100%; } }
+
